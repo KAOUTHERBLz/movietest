@@ -4,7 +4,6 @@ import { moviesData } from "./Component/Data";
 import FilterMovie from "./Component/FilterMovie";
 import MovieList from "./Component/MovieList";
 import AddMovie from "./Component/AddMovie"
-import NavBar from "./Component/NavBar";
 import Footerr from "./Component/Footerr";
 import { Route, Routes } from "react-router-dom";
 import Home from './Pages/Home'
@@ -27,7 +26,7 @@ setMovies([...movies,newMovies])
 
   return (
     <div className="App">
-      <NavBar/>
+
       <Routes>
         <Route exact path="/" element={<Home/>} />
         <Route path="/Aboutus" element={<Aboutus/>} />

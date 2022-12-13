@@ -11,12 +11,16 @@ const MovieCard = ({movie}) => {
         <Card.Text>
         {movie.description}
         </Card.Text>
+        
         <ReactStars
   count={5}
   value={movie.rate}
   size={24}
   color2={'#ffd700'} />,
-        
+        <div>
+          <button variant="dark"><a href={movie.trailer} target={"blank"}>watech trailer</a></button>
+          <button variant="dark"><a href={movie.description}>description</a></button>
+        </div>
       </Card.Body>
     </Card>
     </div>
